@@ -1,0 +1,10 @@
+cards = [7,9,2,4,3,1,6,5,8]
+for j in range (2,10):
+   key = cards [j]
+   i = j - 1
+   while i >= 0 and cards [i] > key:
+     cards [i+1] = cards [i]
+     i = i - 1
+
+  cards[i + 1] =  key
+  print(cards)
